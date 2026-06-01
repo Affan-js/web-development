@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Events in Javascript</title>
+    <script>
+
+
+        function test() {
+            var demo = document.getElementById("demo");
+            var test = document.getElementById('test');
+
+            demo.innerHTML = test.innerHTML;
+
+            //demo.innerHTML = "Welcome to JavaScript";
+        }
+        function getTextValue() {
+            var textBox = document.getElementById("textBox");
+            var textValue = document.getElementById("textValue");
+            textValue.innerHTML = textBox.value;
+
+        }
+    </script>
+</head>
+
+<body onload="test()">
+    <p>onload="alert('Welcome to JavaScript events')"</p>
+    <p>onblur="alert('Welcome to JavaScript events')"</p>
+
+    <p id="test">Get the HTML content <i>of an element</i> with id</p>
+
+    <h1 id="demo">Get the HTML content <i>of an element</i> with id</h1>
+
+    <input type="text" placeholder="Enter name" onchange="getTextValue()" id="textBox" />
+    <input type="button" value="Ok" />
+
+    <p id="textValue"></p>
+
+</body>
+
+</html>
