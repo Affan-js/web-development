@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        input[type=text] {
+            width: 255px;
+            height: 30px;
+            background-color: bisque;
+        }
+
+        input[type=button] {
+            width: calc(250px/4);
+            height: 60px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(240, 240, 240);
+            border-radius: 20px;
+        }
+
+        table {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+
+        function number(number) {
+            var display = document.getElementById('display');
+            display.value = display.value + number;
+        }
+
+        function operator(op) {
+           var display = document.getElementById('display');
+            display.value = display.value + op;
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="display" readonly />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="number(7)" />
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="number(8)" />
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="number(9)" />
+                </td>
+                <td>
+                    <input type="button" value="/" onclick="operator('/')" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="number(4)" />
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="number(5)" />
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="number(6)" />
+                </td>
+                <td>
+                    <input type="button" value="*" onclick="operator('*')" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="number(1)" />
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="number(2)" />
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="number(3)" />
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="operator('-')" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="" disabled />
+                </td>
+                <td>
+                    <input type="button" value="Clear" />
+                </td>
+                <td>
+                    <input type="button" value="=" />
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="operator('+')" />
+                </td>
+            </tr>
+        </table>
+    </table>
+</body>
+
+</html>
