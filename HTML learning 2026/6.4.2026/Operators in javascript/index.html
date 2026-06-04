@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+
+<body>
+    <script>
+        // ==========================================
+        // ARITHMETIC OPERATORS
+        // ==========================================
+        document.write("<b>Arithmetic Operators</b><br><br>");
+
+        var number = "20";
+        var number0 = 28;
+
+        // Convert string to number type
+        number = Number(number);
+
+        var sum = number + number0;
+        document.write("Addition result: " + sum + "<br>");
+
+        var sub = number - number0;
+        document.write("Subtraction result: " + sub + "<br>");
+
+        var multiply = number * number0;
+        document.write("Multiplication result: " + multiply + "<br>");
+
+        var divi = number / number0;
+        document.write("Division result: " + divi + "<br>");
+
+        var reminder = number % number0;
+        document.write("Modulo result: " + reminder + "<br><br>");
+
+
+        // ==========================================
+        // INCREMENT & DECREMENT OPERATORS
+        // ==========================================
+        document.write("<b>Increment & Decrement</b><br><br>");
+
+        var a = 10;
+        var b;
+
+        // 1. Post-Decrement
+        b = a--;
+        document.write("b = a--; -> (Post-Decrement) Value of b is: " + b + " | Current value of a is: " + a + "<br>");
+        document.write("<p>Post: Returns the current value first, then does the math (+1 or -1) to the variable behind the scenes.</p> ")
+        // 2. Pre-Increment
+        b = ++a;
+        document.write("b = ++a; -> (Pre-Increment) Value of b is: " + b + " | Current value of a is: " + a + "<br>");
+        document.write("<p>Post:Pre: Does the math (+1 or -1) first, then returns the brand-new value.</p> ")
+
+
+        // ==========================================
+        // RELATIONAL OPERATORS
+        // ==========================================
+        // checks is equal or not equal
+        var x = 10; var y = 25;
+
+        /*
+          
+        == is equal to, 
+        != is not equal to
+        > is greater than
+        < is lesser than
+        >= is greater than on equal to
+        <= is lesser than or equal to
+
+
+           */
+
+        
+             var res = x == y; // 10 == 25
+             document.write('<br>x =' + x);
+             document.write('<br>y =' + y);
+
+             document.write('<br>x == y = ' + res);
+             
+              res = x != y;
+              document.write('<br>x != y = ' + res);
+
+              res = x < y;
+              document.write('<br>x < y = ' + res);
+
+              res = x > y;
+              document.write('<br>x > y = ' + res);
+
+              res = x <= y; // either the value of x is lower y or x and y are equal
+              document.write('<br>x < y = ' + res);
+
+              res = x >= y; // either the value of x is bigger than y or x and y are equal
+              document.write('<br>x > y = ' + res);
+
+
+    </script>
+</body>
+
+</html>
