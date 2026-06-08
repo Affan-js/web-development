@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relational Operators</title>
+    <script>
+        var num1 = 20, num2 = 30;
+
+        var res = num1 == num2;
+        var res1 = 12 == 15;
+        document.write("The Values Are Equal: " + res1 + "<br>");
+
+        // both checks if 2 values are equal
+        var res2 = 12 + 30;
+        var res2 = 12 + 30 - 5 * 10 / 5;
+        // 12 + 30 - 5 * 2
+        // 12 + 30 - 10
+        // 42 - 10
+        // 32
+        document.write("Value of Res2 is: " + res2 + "<br>");
+        //bodmas
+        /*
+            b - brakets = ()
+            o orders -> Roots, power a value
+            d - division
+            m - multiplication
+            a - addition
+            s - substraction
+        */
+
+        //logical operators 
+        /*
+        AND &&
+        OR ||
+        NOT !=  
+        */
+
+        var age = prompt('Enter Your Age: ');
+        var res = age >= 15 && age <= 40;
+
+        document.write('Age Passed: ' + res + '<br>');
+
+        var qualification = prompt('Enter Your Qualification: (UG/PG)');
+
+        res = qualification == 'UG' || qualification == 'PG';
+        //Checking if the inputed value Matches these 2 "UG""PG"
+        document.write('Qualification Passed: ' + res + '<br>');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
